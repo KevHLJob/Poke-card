@@ -10,13 +10,12 @@
     <link rel="stylesheet" href="./CSS/Index.css" />
 </head>
 <body>
-
-
-
+<!-- Text field of pokemon name -->
     <form action="" onsubmit="searchPokemon(event)">
         <input type="text" name="pokemon" autocomplete="off" class="textfield"
          placeholder="Enter pokemon name">
     </form>
+    <!-- pokemon data, name, id, type, class -->
     <div data-poke-card class="poke-card">
         <div data-poke-name>Pokedex</div>
         <div data-poke-img-container class="img-container">
@@ -27,5 +26,50 @@
         <div data-poke-stats class="poke-stats"></div>
     </div>
 
+    <!-- Section of pokemon name guide -->
+<div class="container-pokemons">
+<ul>Pokemon Name Guide
+        <li>Planta,veneno
+            <ul>
+                <li>Bulbasaur</li>
+                <li>Ivysaur</li>
+                <li>Venusaur</li>
+            </ul>
+        </li>
+        <li>Fuego
+            <ul>
+                <li>Charmander</li>
+                <li>Charmeleon</li>
+                <li>Charizard</li>
+
+            </ul>
+        </li>
+        <li>Agua
+            <ul>
+                <li>Squirtle</li>
+                <li>Wartortle</li>
+                <li>Blastoise</li>
+
+            </ul>
+        </li>
+        <li>Bicho
+            <ul>
+                <li>Caterpie</li>
+                <li>Butterfree</li>
+                <li>Weedle</li>
+                <li>Kakuna</li>
+            </ul>
+        </li>
+        <li>Normal
+            <ul>
+                <li>Pidgey</li>
+                <li>Pidgeotto</li>
+                <li>Pidgeot</li>
+                <li>Rattata</li>
+            </ul>
+        </li>
+      </ul><a href="https://www.pokemon.com/el/pokedex">Complete Guide</a>
+</div>
+    
 </body>
 </html>

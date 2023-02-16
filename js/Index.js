@@ -26,7 +26,7 @@ const typeColors = {
     default: '#2A1A1F',
 };
 
-
+// function of pokemon search from pokemonapi
 const searchPokemon = event => {
     event.preventDefault();
     const { value } = event.target.pokemon;
@@ -35,7 +35,7 @@ const searchPokemon = event => {
         .then(response => renderPokemonData(response))
         .catch(err => renderNotFound())
 }
-
+// function 
 const renderPokemonData = data => {
     const sprite =  data.sprites.front_default;
     const { stats, types } = data;
@@ -48,7 +48,7 @@ const renderPokemonData = data => {
     renderPokemonStats(stats);
 }
 
-
+//function card color default
 const setCardColor = types => {
     const colorOne = typeColors[types[0].type.name];
     const colorTwo = types[1] ? typeColors[types[1].type.name] : typeColors.default;
@@ -79,7 +79,7 @@ const renderPokemonStats = stats => {
         pokeStats.appendChild(statElement);
     });
 }
-
+// if render not found the pokemon, set this function
 const renderNotFound = () => {
     pokeName.textContent = 'No encontrado';
     pokeImg.setAttribute('src', 'poke-shadow.png');
